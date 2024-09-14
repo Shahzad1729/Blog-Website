@@ -30,8 +30,7 @@ app.use('/uploads',express.static(__dirname+'/uploads'))
 
 
 // Connecting to the database
-// @ = %40
-mongoose.connect("mongodb+srv://shahzad:shahzad%40mongodb6245@cluster0.o29naat.mongodb.net/MERNBlog");
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.o29naat.mongodb.net/MERNBlog");
 
 app.get("/",(req,res)=>{
     res.send("<h1>All working fine.</h1>");
